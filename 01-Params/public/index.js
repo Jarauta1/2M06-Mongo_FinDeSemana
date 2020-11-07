@@ -64,7 +64,7 @@ function buscar() {
 
 function modificar() {
 
-    let titulo = document.getElementById("add").value
+    let titulo = document.getElementById("modificar").value
 
     fetch(`/api/editarLibro/${titulo}`, {
             method: "PUT",
@@ -85,7 +85,7 @@ function modificar() {
 
 function borrar() {
 
-    let titulo = document.getElementById("add").value
+    let titulo = document.getElementById("borrar").value
 
     fetch(`/api/borrarLibro/${titulo}`, {
             method: "DELETE",
