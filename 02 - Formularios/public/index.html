@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/api/serie" method="get">
+        <input type="text" name="serie">
+        <button type="submit">BUSCAR</button>
+    </form>
+    <hr>
+    <input type="text" id="nombre" placeholder="Introduce la serie">
+    <input type="text" id="plataforma" placeholder="Introduce la plataforma">
+    <input type="text" id="nota" placeholder="Introduce la nota">
+    <button onclick="add()">AÑADIR</button>
+    <hr>
+
+    <div id="mensaje"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

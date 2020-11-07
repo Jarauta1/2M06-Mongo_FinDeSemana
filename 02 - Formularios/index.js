@@ -29,14 +29,18 @@ app.get("/api/series", function(req, res) {
 
 app.get("/api/serie", function(req, res) {
 
-    let nombre = req.body.titulo
+    let nombre = req.query.serie
 
-    db.collection("libros").find({ titulo: nombre }).toArray(function(err, datos) {
+    db.collection("tv").find({ titulo: nombre }).toArray(function(err, datos) {
         if (err !== null) {
             console.log(err)
             res.send({ mensaje: "Error:" + err })
         } else {
-            res.send(datos)
+            res.send(`
+            <h1>${datos[0].titulo}</h1>
+            <p>Plataforma: ${datos[0].plataforma}</p>
+            <p>Nota: ${datos[0].nota}</p>
+            `)
         }
     })
 })
