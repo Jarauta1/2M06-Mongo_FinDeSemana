@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <hr>
+    <!-- Añadir -->
+    <input type="text" id="numero" placeholder="Indica el nº del menú">
+    <input type="text" id="primero" placeholder="Primer plato">
+    <input type="text" id="segundo" placeholder="Segundo plato">
+    <input type="text" id="postre" placeholder="Postre">
+    <input type="text" id="precio" placeholder="Precio">
+    <button onclick="add()">AÑADIR</button>
+    <hr>
+    <!-- Modificar -->
+    <input type="text" id="numeroEditado" placeholder="Indica el nº del menú">
+    <input type="text" id="primeroEditado" placeholder="Primer plato">
+    <input type="text" id="segundoEditado" placeholder="Segundo plato">
+    <input type="text" id="postreEditado" placeholder="Postre">
+    <input type="text" id="precioEditado" placeholder="Precio">
+    <button onclick="modificar()">EDITAR</button>
+    <hr>
+    <!-- Borrar -->
+    <input type="text" id="numeroBorrar" placeholder="Indica el nº del menú">
+    <button onclick="borrar()">BORRAR</button>
+    <hr>
+
+
+    <!-- Mostrar resultado -->
+    <div id="mensaje"></div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
